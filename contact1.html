@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <style>
+        body {
+            background-image: url('https://www.w3schools.com/w3images/forest.jpg'); 
+            background-size: cover;
+            background-position: center;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        li {
+            display: inline;
+        }
+
+        #li-1 {
+            padding-left: 20px;
+        }
+
+        form {
+            background-color: rgba(0, 0, 0, 0.6); 
+            padding: 20px;
+            border-radius: 8px;
+            margin: 30px auto;
+            width: 60%;
+        }
+
+        h1 {
+            background-color: rgba(255, 228, 196, 0.7);
+            text-align: center;
+            padding: 10px;
+            font-size: 35px;
+            border-radius: 10px;
+        }
+
+        fieldset {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        legend {
+            font-size: 30px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input, textarea {
+            padding: 10px;
+            font-size: 14px;
+            width: 100%;
+            box-sizing: border-box;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            margin-bottom: 15px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 16px;
+        }
+
+        footer p {
+            color: #fff;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav a {
+            color: white;
+            font-size: 20px;
+        }
+
+        nav a:hover {
+            color: #4CAF50;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Our Contact Form</h1>
+        <section>
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend><strong>Send Us a Message</strong></legend>
+
+                    <!-- Name Field -->
+                    <div>
+                        <label for="name">Name :</label>
+                        <input type="text" name="name" id="name" placeholder="Your name" required>
+                    </div>
+
+                    <!-- Email Field -->
+                    <div>
+                        <label for="email">Email :</label>
+                        <input type="email" name="email" id="email" placeholder="Your email" required>
+                    </div>
+
+                    <!-- Message Field -->
+                    <div>
+                        <label for="message">Your Message :</label>
+                        <textarea name="message" id="message" rows="5" cols="20" placeholder="Type your message here" required></textarea>
+                    </div>
+                </fieldset>
+
+                <button type="submit"><strong>Send</strong></button>
+                <button type="reset"><strong>Reset</strong></button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p><b>&copy; LensMall</b></p>
+    </footer>
+
+    <nav>
+        <ul>
+            <li><a href="C:\Nagur_VSCode\Html\udemy_projects\task1\shop.html"><b>SHOP</b></a></li>
+            <li id="li-1"><a href="C:\Nagur_VSCode\Html\udemy_projects\task1\index.html"><b>HOME</b></a></li>
+        </ul>
+    </nav>
+</body>
+</html>
